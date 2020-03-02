@@ -1,0 +1,258 @@
+
+/* BACKGROUND IMAGES */
+/* need to include parallax on each page */
+
+.home-bg{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    background-image: url(../images/black-classic.jpg);
+}
+
+.about-bg{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    background-image: url(../images/phil-paul.jpg);
+}
+
+.sponsors-bg{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    background-image: url(../images/bumble-bee-car.jpg);
+}
+
+.registration-bg{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    background-image: url(../images/teal-classic.jpg);
+}
+
+.events-bg{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    background-image: url(../images/shelby-classic.jpg);
+}
+
+.contact-bg{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    background-image: url(../images/ricergang-guys.jpg);
+}
+
+/* TEXT STYLING */
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin:20px 40px
+}
+h1{
+    font-size: 50px;
+    line-height: 1;
+    padding: 40px 40px 330px 40px;
+    margin:0px
+}
+
+h2{
+    font-size: 30px;
+    line-height: 1;
+    padding: 30px 0;
+    margin:40px
+}
+
+h3{
+    font-size: 25px;
+    line-height: 1;
+    padding: 30px 0;
+    margin:40px
+}
+
+footer{
+    bottom: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+/* NAVIGATION AND HEADER STYLING */
+header{
+    background-color: rgb(255, 255, 255);
+    /* background-image: linear-gradient(white, white, rgba(255, 255, 255, 0)); */
+    text-align:right;
+    /* padding: 0px 0px 35px 0px; */
+}
+
+header img{
+    width:100px;
+    float: left;
+}
+
+/* nav{
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    display:inline-block
+} */
+
+nav li{
+    display:inline-block;
+    margin:30px 30px;
+    text-transform: uppercase;
+}
+
+nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+nav a:hover{
+    color: #6AC307;
+    /* border: solid #6AC307;
+    padding:5px 25px; */
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.current {
+    background-color:#6AC307;
+    padding:28px 25px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    /* border-radius: 20px; */
+}
+
+.current:hover {
+    color:black;
+}
+/* HOW DO I MAKE THE ITEMS NOT "GROW" */
+
+/* ACCESSIBILITY */
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus{
+    position:absolute;
+    top: 0px;
+}
+
+a:focus {
+    border: solid #6AC307;
+    padding:5px 25px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    /* border-radius: 20px; */
+}
+
+/* DIV STYLING */
+
+.transparent-black, .blue, .green{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    align-items: center;
+}
+
+.transparent-black{
+    background-color: rgba(0, 0, 0, 0.822);
+    padding:25px 20px;
+    margin:50px 100px
+}
+
+#transparent-variant{
+    background-color: rgba(0, 0, 0, 0.822);
+    padding:20px;
+    margin:50px;
+    width:35%;
+    text-align: left;
+    float: right;
+}
+#transparent-variant h1{
+    padding:0;
+    margin:50px;
+}
+
+#transparent-variant p{
+    font-size:20px
+}
+
+.blue{
+    background-color: rgba(255, 255, 255, 0.822);
+    color: #00AEA4;
+    padding:25px 20px;
+    margin:50px 100px
+}
+
+.green{
+    background-color: rgba(255, 255, 255, 0.822);
+    color:#6AC307;
+    padding:25px 20px;
+    margin:50px 100px
+}
+
+
+.intro{
+    grid-column: 1;
+}
+
+.description{
+    grid-column: 2;
+    text-align: left;
+    color:black;
+}
+
+.blue-banner{
+    background-color: #00AEA4;
+    padding:25px 20px;
+    /* margin:50px 100px */
+}
+
+.green-banner{
+    background-color:#6AC307;
+    padding:25px 20px;
+    /* margin:50px 100px */
+}
