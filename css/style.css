@@ -497,7 +497,7 @@ flex: 1 0 220px;
 
 #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
     height: 2em;
-    min-width:242px;
+    max-width:242px;
 }
 
 /* CONTACT */
@@ -550,6 +550,10 @@ flex: 1 0 220px;
 @media screen and (min-width: 676px){
     .flex-text{
         width: 40%;
+    }
+
+    #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
+        min-width:242px;
     }
 
     .flip-card{
