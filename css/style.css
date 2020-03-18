@@ -492,6 +492,9 @@ flex: 1 0 220px;
     height: 2em;
 }
 
+.register{
+    max-width: 40%;
+}
 /* CONTACT */
 
 .resource{
