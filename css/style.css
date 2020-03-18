@@ -365,7 +365,7 @@ label{
     justify-self: center;
 }
 
-.form h3, .form h3{
+.form h3{
 	font-size: 140%;
 	font-weight: 300;
 	text-align: center;
@@ -439,11 +439,11 @@ flex: 1 0 220px;
     background-color: #6AC307;
     height: 3em;
 }
-
+/* 
 .register input[type="submit"]{
     background-color: #43D1AF;
     height: 3em;
-}
+} */
 
 .contact input[type="submit"]:hover{
     background-color: rgb(101, 173, 18);
@@ -452,12 +452,12 @@ flex: 1 0 220px;
     height: 3em;
 }
 
-.register input[type="submit"]:hover{
+/* .register input[type="submit"]:hover{
 	background-color: #00AEA4;
     -webkit-transition: all 0.30s ease-in-out;
     transition:  all 0.30s ease-in-out;
     height: 3em;
-}
+} */
 
 .form input[type="text"],
 .form input[type="email"],
@@ -470,13 +470,13 @@ flex: 1 0 220px;
 	color: #555;
 }
 
-.contact *:focus, .contact li:focus, #subject:focus, #email:focus, #name:focus{
+.contact *:focus, .contact li:focus, #subject:focus, #email:focus, #name:focus, #r-name:focus, #r-email:focus, #r-birthdate:focus, #r-make:focus, #r-model:focus, #r-year:focus, #r-colour:focus, #r-clubs:focus{
     box-shadow: 0 0 5px #6AC307;
     border: 1px solid#6AC307;
     outline:none
 }
 
-#name,  #email, #subject{
+#name,  #email, #subject, #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
     height: 2em;
 }
 
@@ -486,15 +486,13 @@ flex: 1 0 220px;
     min-height: 5em;
 }
 
-.register *:focus, .register li:focus, #r-name:focus, #r-email:focus, #r-birthdate:focus, #r-make:focus, #r-model:focus, #r-year:focus, #r-colour:focus, #r-clubs:focus{
+/* .register *:focus, .register li:focus, #r-name:focus, #r-email:focus, #r-birthdate:focus, #r-make:focus, #r-model:focus, #r-year:focus, #r-colour:focus, #r-clubs:focus{
     box-shadow: 0 0 5px #43D1AF;
     border: 1px solid#00AEA4;
     outline:none
-}
+} */
 
-#register{
-    margin-right:0px
-}
+
 /* .register{
     margin-right:0px
 } */
@@ -503,9 +501,9 @@ flex: 1 0 220px;
     height: 2em;
     max-width:200px;
 } */
- input {
+ /* input {
     height: 2em
-}
+} */
 
 #attachment{
     box-shadow: 0 0 0;
@@ -562,9 +560,10 @@ flex: 1 0 220px;
         width: 50%;
     }
 
-    /* #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
-        min-width:45%;
-    } */
+    #register{
+    grid-column: 1 / -1;
+    justify-self: center;
+    }
 
     .flip-card{
         background-color: transparent;
