@@ -478,34 +478,19 @@ flex: 1 0 220px;
 
 #name,  #email, #subject, #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
     height: 2em;
-    margin: 0px 80px 0px 0px;
+    margin: 0px 85px 0px 0px;
 }
 
 #message{
     font-size:1em;
-    margin: 0px 80px 0px 0px;
+    margin: 0px 85px 0px 0px;
     resize: vertical;
     min-height: 5em;
 }
 
-/* .register *:focus, .register li:focus, #r-name:focus, #r-email:focus, #r-birthdate:focus, #r-make:focus, #r-model:focus, #r-year:focus, #r-colour:focus, #r-clubs:focus{
-    box-shadow: 0 0 5px #43D1AF;
-    border: 1px solid#00AEA4;
-    outline:none
-} */
-
-
-/* .register{
-    margin-right:0px
-} */
-
-/* #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
-    height: 2em;
-    max-width:200px;
-} */
- /* input {
-    height: 2em
-} */
+#submit{
+    margin: 0px 85px 0px 0px;
+}
 
 #attachment{
     box-shadow: 0 0 0;
@@ -561,6 +546,9 @@ flex: 1 0 220px;
     .flex-text{
         width: 50%;
     }
+    #submit{
+        margin: 0px;
+    }
 
     #register{
     grid-column: 1 / -1;
@@ -573,13 +561,13 @@ flex: 1 0 220px;
         height: 600px;
         perspective: 1000px;
     }
-    
+
     #flip-me{
         display: block;
         width: 600px;
         height: 600px;
     }
-    
+
     .flip-card-inner{
         position: relative;
         width: 100%;
