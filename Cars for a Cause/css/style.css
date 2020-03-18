@@ -1,0 +1,894 @@
+/* BACKGROUND IMAGES */
+
+.parallax{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+}
+
+.home-bg{
+    background-image: url(../images/black-classic.jpg);
+}
+
+.about-bg{
+    background-image: url(../images/about-header.jpg);
+}
+
+.sponsors-bg{
+    background-image: url(../images/lambo-limbo.jpg);
+}
+
+.registration-bg{
+    background-image: url(../images/registration-header.jpg);
+}
+
+.events-bg{
+    background-image: url(../images/shelby-classic.jpg);
+}
+
+.contact-bg{
+    background-image: url(../images/winner-cheering.jpg);
+}
+
+/* TEXT STYLING *//* MOBILE, get rid of this line to the right in a minute */
+
+
+html, main {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    transition: all .2s linear; 
+    -webkit-transition:all .2s linear;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin:20px;
+    text-indent: 40px;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 50px;
+    padding: 30px;
+    margin:0px;
+    /* animation: slideIn .8s ease forwards .5s; */
+}
+
+h2{
+    font-size: 40px;
+    padding: 10px 0px 10px 0px;
+    margin:40px;
+}
+
+h3{
+    font-size: 30px;
+    padding: 10px 0px 20px 0px;
+    margin:40px
+}
+
+h4{
+    font-size: 25px;
+    padding: 10px 0px 20px 0px;
+    margin:20px
+}
+
+footer{
+    /* NEED TO MAKE THIS STICKY SOMEHOW */
+    left:0px;
+    width:100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.footer p{
+    font-family: 'Oxanium', sans-serif;
+    font-size: 0.7em;
+}
+
+#logo{
+    display:none
+}
+
+.container{
+    display:block
+}
+.transparent-white, .transparent-black{
+    margin: 10px;
+}
+
+nav li{
+    display:block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+nav a{
+    font-size: 0.8em;
+}
+
+.nav_links{
+    padding:10px;
+}
+
+.current {
+    background-color:#6AC307;
+    -webkit-transition: 1s;
+    transition: 1s;
+    padding:10px 40px;
+}
+/* NAVIGATION AND HEADER STYLING */
+header{
+    background-color: rgba(238, 238, 238, 0.863);
+    text-align:center;
+    width:100%;
+    margin-bottom: 30px;
+}
+
+header img{
+    width:100px;
+    float: left;
+}
+
+nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+nav li{
+    margin:20px 14px ;
+}
+
+nav a:hover{
+    color: #6AC307;
+    text-decoration: none;
+    border-bottom: 1px dotted #6AC307;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.current:hover {
+    color:black;
+}
+
+/* ACCESSIBILITY */
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus{
+    position:absolute;
+    top: 0px;
+}
+
+a:focus {
+    border: solid #6AC307;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+/* DIV STYLING */
+
+.blue{
+    color:#00756F;
+    margin: 10px
+}
+
+.green{
+    color: #6AC307;
+    margin: 10px
+}
+
+.red{
+    color: rgb(136, 0, 0);
+    margin: 10px
+}
+
+.transparent{
+    padding: 20px;
+    overflow: auto;
+    justify-self: start;
+    align-self: start;
+    transition: ease all 2s;
+    -webkit-transition: ease all 2s;
+    margin:10px;
+}
+
+.white{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+.black{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+.space{
+    line-height: 1.7;
+}
+
+.current-sponsor p{
+    text-indent: 0px;
+}
+
+/* FLEXBOX */
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 400px;
+}
+
+.flex-logo{
+    text-align: center;
+    width: 40%;
+    flex-basis: 400px;
+}
+
+.flex-text{
+    width: 70%;
+}
+/* FLIPCARD */
+
+#flip-me{
+    display:none;
+}
+
+.flip-card-back{
+    background-color: rgba(0, 174, 165, 0.911);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+  /* EVENTS */
+
+.schedule{
+    background-color: rgba(245, 245, 245, 0.87);
+    box-shadow: 0 0 5px rgb(205, 207, 207);
+}
+
+.schedule, .schedule p, .raffle p{
+    text-align: left;
+    text-indent: 0%;
+}
+
+.raffle{
+    display:inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin:10px;
+    flex-direction: column;
+
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px rgb(205, 207, 207);
+    padding:20px;
+}
+
+.raffle h4{
+    text-transform: uppercase;
+}
+
+.gallery-title{
+    text-align: center;
+}
+
+.gallery{
+    background-color: rgba(0, 0, 0, 0.829);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.gallery img{
+    max-height: 400px;
+    max-width: auto;
+    object-fit: contain;
+    padding: 10px;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.gallery img:hover{
+    transform: scale(1.10);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.gallery img:nth-child(even) {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+  /* SPONSORS */
+
+.option{
+    flex: 1 1 340px;
+    padding:20px;
+
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px rgb(205, 207, 207);
+}
+
+#sponsor-logo{
+    width: 12.500em;
+}
+
+/* FORMS *//* Form base used from https://www.sanwebe.com/2014/08/css-html-forms-designs style 6 AND https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767 */
+
+input{
+    font-size: 1em;
+    color:black;
+}
+
+label{
+    color:black;
+}
+
+.form{
+    padding: 30px;
+    min-width: 70%;
+    max-width: 90%;
+    background-color:whitesmoke;
+    justify-self: center;
+}
+
+.form h3, .form h3{
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: black;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .15em;
+    text-shadow:
+    -1px 2px 1px #888888,
+    -2px 4px 1px #9c9c9c,
+    -3px 6px 1px #b8b8b8,
+    -4px 8px 1px #d8d8d8,
+    -5px 10px 1px #f1f1f1;
+}
+
+.form *{
+box-sizing: border-box;
+color:black;
+-webkit-transition: all 0.30s ease-in-out;
+transition:  all 0.30s ease-in-out;
+}
+
+.items{
+list-style-type: none;
+padding: 0;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.items li{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+padding: 20px;
+}
+
+.items li label,
+.items li p {
+padding: 8px;
+font-weight: 300;
+letter-spacing: .09em;
+text-transform: uppercase;
+}
+
+.items > li > label,
+.items li p{
+flex: 1 0 120px;
+max-width: 220px;
+}
+
+.items > li > label + *{
+flex: 1 0 220px;
+}
+
+.items li input:not([type='checkbox']),
+.items li textarea{
+    padding: 15px;
+    box-shadow: 0 0 5px rgb(214, 214, 214);
+    border:none;
+}
+
+.items input[type="submit"]{
+    padding: 20px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    width: 100%;
+}
+
+.contact input[type="submit"]{
+    background-color: #6AC307;
+}
+
+.register input[type="submit"]{
+    background-color: #43D1AF;
+}
+
+.contact input[type="submit"]:hover{
+    background-color: rgb(101, 173, 18);
+    -webkit-transition: all 0.30s ease-in-out;
+    transition:  all 0.30s ease-in-out;
+}
+
+.register input[type="submit"]:hover{
+	background-color: #00AEA4;
+    -webkit-transition: all 0.30s ease-in-out;
+    transition:  all 0.30s ease-in-out;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form select{
+	-webkit-transition: all 0.30s ease-in-out;
+    transition:  all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	color: #555;
+}
+
+.contact *:focus, .contact li:focus, #subject:focus, #email:focus, #name:focus{
+    box-shadow: 0 0 5px #6AC307;
+    border: 1px solid#6AC307;
+    outline:none
+}
+
+#name,  #email, #subject{
+    height: 2em;
+}
+
+#message{
+    font-size:16px;
+    resize: vertical;
+    min-height: 5em;
+}
+
+.register *:focus, .register li:focus, #r-name:focus, #r-email:focus, #r-birthdate:focus, #r-make:focus, #r-model:focus, #r-year:focus, #r-colour:focus, #r-clubs:focus{
+    box-shadow: 0 0 5px #43D1AF;
+    border: 1px solid#00AEA4;
+    outline:none
+}
+
+#r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
+    height: 2em;
+}
+
+/* CONTACT */
+
+.resource{
+    text-align: center;
+    flex: 1 1 340px;
+    margin: 10px;
+}
+
+.resource p{
+    font-size: 100% ;
+    text-indent: 0%;
+}
+
+/* REGISTRATION */
+
+.animation{
+    transform: scale(0);
+    -webkit-animation: car-go 15s;
+    animation: car-go 15s;
+}
+
+.car{
+    width: 100px;
+}
+
+@keyframes car-go {
+    0%{
+        transform:translate(1400px);
+        opacity:1;
+    }
+    70%{
+        opacity:1;
+    }
+    100%{
+        transform:translate(-100px);
+        opacity:0;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    .animation{
+        animation: none;
+    }
+}
+
+/* MEDIA QUERIES */
+/* tablet, staggering some pages, two column structural change */
+@media screen and (min-width: 676px){
+    .flex-text{
+        width: 40%;
+    }
+
+    .flip-card{
+        background-color: transparent;
+        width: 600px;
+        height: 600px;
+        perspective: 1000px;
+    }
+    
+    #flip-me{
+        display: block;
+        width: 600px;
+        height: 600px;
+    }
+    
+    .flip-card-inner{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner{
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    
+    .flip-card-front{
+        color: white;
+    }
+    
+    .flip-card-back{
+        background-color: rgba(0, 174, 165, 0.911);
+        color: white;
+        transform: rotateY(180deg);
+        padding:0px;
+    }
+
+    p{
+        font-size: 1.1em;
+    }
+    .container{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+        gap:20px;
+        padding: 40px;
+    }
+
+    nav li{
+        font-size:16px;
+        display:inline-block;
+        margin:20px 14px ;
+    }
+
+    .nav_links{
+        padding:0px;
+    }
+
+    .current {
+        padding:20px 15px;
+    }
+
+    /* INDEX */
+    .flip-card{
+        grid-column: 2 / span 3;
+        grid-row:1 / span 2
+    }
+    .who-index{
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+    .cmha-index{
+        grid-column: 1 / span 4 ;
+        grid-row: 4;
+        padding-bottom: 3em;
+    }
+
+    /* ABOUT */
+    .story-about{
+        grid-column:1 / span 3 ;
+        grid-row: 1;
+
+    }
+    .paul{
+        grid-column: 2 / span 3;
+        grid-row: 2;
+        align-self: center;
+    }
+    .phil{
+        grid-column: 1 / span 3 ;
+        grid-row: 3;
+        }
+
+    /* EVENTS */
+    .upcoming-header{
+        grid-column: 1 / -1;
+        grid-row: 1;
+        align-self: center;
+        justify-self:center
+    }
+    .car-show{
+        grid-column: 1 / span 3;
+        grid-row: 2;
+        text-align: center;
+    }
+    .awards{
+        grid-column: 1 / span 3;
+        grid-row: 4;
+    }
+    .raffle-prizes{
+        grid-column: 2 / span 3 ;
+        grid-row: 3 ;
+    }
+    .how-to-register{
+        grid-column: 2 / span 3;
+        grid-row: 5;
+    }
+    .past-title{
+        grid-row: 6;
+        grid-column: 1 / -1 ;
+        align-self: center;
+        justify-self:center
+    }
+    .past-car-show{
+        grid-column: 1 /span 4;
+        grid-row: 7
+    }
+
+    /* SPONSORS */
+    .become-sponsor{
+        grid-column: 1 / span 3 ;
+        grid-row: 1;
+    }
+    .what{
+        grid-column: 2 / span 2;
+        grid-row: 2;
+        justify-self: center;
+        text-align: center;
+    }
+    .sponsor-option{
+        grid-column: 1/ span 4;
+        grid-row: 3;
+        padding:30px
+    }
+    .three{
+        grid-column: 1 / span 4;
+        grid-row: 4;
+    }
+    .current-sponsor{
+        grid-column: 1 / span 4;
+        grid-row: 5;
+        justify-self: center;
+    }
+
+    /* REGISTRATION */
+    .event-registration{
+        grid-column: 1 / -1 ;
+    }
+    .register{
+        grid-column:1 / span 4 ;
+        grid-row: 2 ;
+    }
+
+    /* CONTACT */
+    .involved{
+        grid-column: 1 / span 2 ;
+        grid-row: 1;
+    }
+    .hotlines{
+        grid-column: 1 / span 4 ;
+        grid-row: 2 ;
+    }
+    .contact{
+        grid-column: 3 / span 2;
+        grid-row: 1 ;
+    }
+}
+
+@media screen and (min-width:1255px) {
+
+#logo{
+    display:block
+}
+
+header{
+    text-align: right;
+}
+
+nav li{
+    display:inline-block;
+    margin:30px 20px;
+}
+
+nav a{
+    font-size: 1em;
+}
+
+nav a:hover{
+    color: #6AC307;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.current {
+    background-color:#6AC307;
+    padding:28px 25px;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.container{ /* https://medium.com/@tforward/responsive-css-grid-different-layouts-at-different-sizes-5a6c8cf75e6e */
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.flip-card{
+    background-color: transparent;
+    width: 600px;
+    height: 600px;
+
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.who-index{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.cmha-index{
+    grid-column: 1 / span 4 ;
+    grid-row: 3 / span 2;
+}
+
+.paul{
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.phil{
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 6em;
+    /* padding-bottom: 3em; */
+}
+
+.story-about{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    margin-bottom: 3em;
+}
+
+.car-show{
+    grid-column: 1 /span 4;
+    grid-row: 2;
+}
+
+.upcoming-header{
+    grid-row: 1;
+    grid-column: 1 / -1 ;
+}
+.awards{
+    grid-column: 1 /span 2;
+    grid-row: 3
+}
+
+.raffle-prizes{
+    grid-column: 3 /span 3;
+    grid-row: 3;
+    text-align: center;
+}
+
+.how-to-register{
+    grid-column: 2 / span 4;
+    grid-row: 4 / span 2;
+}
+
+.past-car-show{
+    grid-column: 1 /span 4;
+    grid-row: 7
+}
+
+.three{
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: center;
+}
+
+.become-sponsor{
+    grid-row: 1;
+    grid-column: 1 / span 3;
+}
+
+.what{
+    align-self: center;
+    grid-row: 1;
+    grid-column: 4 / span 2;
+}
+
+.sponsor-option{
+    grid-row: 2;
+    grid-column: 1 / span 5;
+}
+.contact{
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+.register{
+    grid-column: 1;
+    grid-row : 2 ;
+}
+
+.involved{
+    grid-row: 1;
+    grid-column: 1 / span 2 ;
+}
+
+.hotlines{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+.event-registration{
+    grid-row: 1;
+}
+
+.contact{
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+.register{
+    grid-column: 1 / -1;
+    grid-row : 2 ;
+}
+.current-sponsor{
+    grid-column: 1 / span 5;
+    grid-row: 4 / span 2;
+    justify-self: center;
+    text-align: center;
+    padding-bottom: 3em;
+}
+}
