@@ -360,7 +360,7 @@ label{
 .form{
     padding: 30px;
     min-width: 70%;
-    max-width: 90%;
+    max-width: 80%;
     background-color:whitesmoke;
     justify-self: center;
 }
@@ -488,13 +488,18 @@ flex: 1 0 220px;
     outline:none
 }
 
+#register{
+    margin-right:0px
+}
+/* .register{
+    margin-right:0px
+} */
+
 #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
     height: 2em;
+    min-width:242px;
 }
 
-.register{
-    max-width: 40%;
-}
 /* CONTACT */
 
 .resource{
