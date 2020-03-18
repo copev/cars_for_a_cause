@@ -437,22 +437,26 @@ flex: 1 0 220px;
 
 .contact input[type="submit"]{
     background-color: #6AC307;
+    height: 3em;
 }
 
 .register input[type="submit"]{
     background-color: #43D1AF;
+    height: 3em;
 }
 
 .contact input[type="submit"]:hover{
     background-color: rgb(101, 173, 18);
     -webkit-transition: all 0.30s ease-in-out;
     transition:  all 0.30s ease-in-out;
+    height: 3em;
 }
 
 .register input[type="submit"]:hover{
 	background-color: #00AEA4;
     -webkit-transition: all 0.30s ease-in-out;
     transition:  all 0.30s ease-in-out;
+    height: 3em;
 }
 
 .form input[type="text"],
@@ -495,11 +499,17 @@ flex: 1 0 220px;
     margin-right:0px
 } */
 
-#r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
+/* #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
     height: 2em;
     max-width:200px;
+} */
+ input {
+    height: 2em
 }
 
+#attachment{
+    box-shadow: 0 0 0;
+}
 /* CONTACT */
 
 .resource{
@@ -549,12 +559,12 @@ flex: 1 0 220px;
 /* tablet, staggering some pages, two column structural change */
 @media screen and (min-width: 676px){
     .flex-text{
-        width: 40%;
+        width: 50%;
     }
 
-    #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
-        min-width:242px;
-    }
+    /* #r-name, #r-email, #r-make, #r-model, #r-clubs, #r-colour, #r-year, #r-birthdate{
+        min-width:45%;
+    } */
 
     .flip-card{
         background-color: transparent;
