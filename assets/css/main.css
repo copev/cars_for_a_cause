@@ -2791,6 +2791,7 @@ input, select, textarea {
 		padding: 6em 0 4em 0 ;
 	}
 
+
 		.wrapper > .inner {
 			width: 60em;
 			margin: 0 auto;
@@ -4000,13 +4001,13 @@ input, select, textarea {
 
 	.map-responsive{
 		overflow:hidden;
-		padding-bottom:56.25%;
+		padding-bottom:46.25%;
 		position:relative;
 		height:0;
 	}
 
 	.map-responsive iframe{
-		left:0;
+		left:10%;
 		top:0;
 		height:100%;
 		width:100%;
